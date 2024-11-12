@@ -1,7 +1,7 @@
 import aiomysql
 
 DATABASE_CONFIG = {
-    'host': '172.19.176.1',   
+    'host': '192.168.0.17',   
     'port': 3306,
     'user': 'gym_root',      
     'password': 'Teletrabajo88',
