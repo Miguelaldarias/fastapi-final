@@ -4,7 +4,7 @@ DATABASE_CONFIG = {
     'host': '192.168.0.17',   
     'port': 3306,
     'user': 'gym_root',      
-    'password': 'Teletrabajo88',
+    'password': 'Teletrabajo88.!',
     'db': 'gymsport'
 }
 
