@@ -20,7 +20,8 @@ app = FastAPI(lifespan=lifespan)
 # Configuración de CORS
 origins = [
     "http://localhost:3000",  # Frontend en desarrollo
-    "http://127.0.0.1:3000"
+    "http://127.0.0.1:3000",
+    "http://13.51.160.6:8000"  # IP pública de tu instancia
 ]
 
 app.add_middleware(
