@@ -35,6 +35,11 @@ app.add_middleware(
 # Registro de rutas
 app.include_router(api_router)
 
+# Endpoint de prueba
+@app.get("/test")
+async def test_endpoint():
+    return {"message": "API en funcionamiento!!!!"}
+
 
 if __name__ == "__main__":
     import uvicorn
