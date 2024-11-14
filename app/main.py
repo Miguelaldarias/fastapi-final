@@ -21,7 +21,8 @@ app = FastAPI(lifespan=lifespan)
 origins = [
     "http://localhost:3000",  # Frontend en desarrollo
     "http://127.0.0.1:3000",
-    "http://13.51.160.6:8000"  # IP pública de tu instancia
+    "http://13.51.160.6:8000", # IP pública de tu instancia
+    "http://frontend-examen-final.s3-website.eu-north-1.amazonaws.com/registros/clientes"
 ]
 
 app.add_middleware(
