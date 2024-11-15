@@ -11,7 +11,7 @@ router = APIRouter()
 
 # Función para hashear la contraseña
 def hash_password(plain_password: str) -> str:
-    return bcrypt.hashpw(plain_password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
+    return bcrypt.hashpw(plain_password.encode('utf-8'), bcrypt.gensalt(rounds=14)).decode('utf-8')
 
 # Ruta para crear un nuevo cliente
 @router.post("/clientes/")
