@@ -50,14 +50,3 @@ async def get_cliente_profile(cliente_id: int, db: aiomysql.Connection = Depends
         if not cliente:
             raise HTTPException(status_code=404, detail="Cliente no encontrado")
     return cliente 
-
-# Ruta para actualizar el perfil de un cliente
-#@router.put("/clientes/profile", response_model=Cliente)
-#async def update_cliente_profile(cliente_data: ClienteCreate, db: aiomysql.Connection = Depends(get_db), current_user=Depends(get_current_user)):
- #   async with db.cursor() as cursor:
- #       await cursor.execute(
-  #          "UPDATE Clientes SET nombre = %s, email = %s, edad = %s, peso = %s, grasa_corporal = %s, objetivo = %s WHERE id = %s",
-   #         (cliente_data.nombre, cliente_data.email, cliente_data.edad, cliente_data.peso, cliente_data.grasa_corporal, cliente_data.objetivo, current_user["id"])
-   #     )
-    #    await db.commit()
-    #return {"message": "Perfil de cliente actualizado correctamente"}
